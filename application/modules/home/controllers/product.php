@@ -12,17 +12,15 @@
         public function index()
         {
             $data['info']               = $get_setup = $this->mindex->get_setup();
-
+            $hxs = '';
             $data['lang_page']  = $this->session->userdata('lang_page');
-            $hsx = $this->input->get('hsx');
-            if ($data['lang_page'] == '1') 
+            if ($data['lang_page'] == '1'){
                 $config['base_url']     = base_url()."san-pham";
-            else
+            }
+            else{
                 $config['base_url']     = base_url()."product";
-            if ($hsx) 
-                $config['total_rows']   = $this->mproduct->count_all($data['lang_page'], $hsx);
-            else 
-                $config['total_rows']   = $this->mproduct->count_all($data['lang_page']);
+            }
+            $config['total_rows']   = $this->mproduct->count_all($data['lang_page']);
             
             $config['per_page']     = $get_setup['set_pro_bestsale'];
             $config['uri_segment']  = "2";
@@ -35,11 +33,7 @@
             $this->load->library("pagination");
             $this->pagination->initialize($config);
             $start = $this->uri->segment(2);
-            if ($hsx) 
-                $listProduct = $this->mproduct->getAll($data['lang_page'], $config['per_page'], $start, $hsx);
-            else 
-                $listProduct = $this->mproduct->getAll($data['lang_page'], $config['per_page'], $start);
-            
+            $listProduct = $this->mproduct->getAll($data['lang_page'], $config['per_page'], $start);
             if (!empty($listProduct)) {
                 foreach($listProduct as $k => $v) {
                     if ($v['pro_images']) {
@@ -72,7 +66,7 @@
             $data['listHangSanXuat']    = $this->mhangsanxuat->getAll($data['lang_page']);
             $data['listProduct']        = $listProduct;
 
-            $data['template'] = 'product/index';
+            $data['template'] = 'product/allproduct';
             $this->load->view('layout', $data);
         }
 
