@@ -1,0 +1,2 @@
+http://localhost/anhhoa/setup/update_key
+quantri: localhost/admin, user; admin, pass: 123456
