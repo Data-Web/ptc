@@ -25,7 +25,7 @@
 
 
     <script language="JavaScript" type="text/javascript"
-            src="../sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
+            src="/js/BrightcoveExperiences.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -54,18 +54,21 @@
     </script>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/adjustments.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/adjustments.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/jquery-ui.css"/>
     <!--[if IE 9]>
     <link rel="stylesheet" type="text/css" href="/css/ie9.css"/>
     <script src="/js/backgroundsize.min.htc"></script>
     <![endif]-->
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
 
+    <!-- ----------------- custom css by garung------------------------  -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>public/ptc/css/custom_css.css">
+    <!--------------------------------------------------------- -->
 
-    <script src="js/jquery.bootpag.js"></script>
+    <script src="/js/jquery.bootpag.js"></script>
 
     <!-- Tracker Scripts -->
     <script type="text/javascript">
@@ -85,7 +88,7 @@
                 var s = document.createElement('script');
                 s.type = 'text/javascript';
                 s.async = true;
-                s.src = '../img.en25.com/i/elqCfg.min.js';
+                s.src = '/js/elqCfg.min.js';
                 var x = document.getElementsByTagName('script')[0];
                 x.parentNode.insertBefore(s, x);
 
@@ -229,27 +232,8 @@
         }
     </script>
 
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-21507862-4', 'auto', {
-            'allowLinker': true
-        });
-    </script>
-
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
+<body>
 
 
 <header>
@@ -438,7 +422,7 @@
 
 <style type="text/css">
     .talk-to-us .flag {
-        background: #00548b url("images/talk-to-us.png") no-repeat scroll 50% 50%;
+        background: #00548b url("/images/talk-to-us.png") no-repeat scroll 50% 50%;
     }
 </style>
 <aside>
@@ -450,7 +434,7 @@
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
                     <a href="#call" aria-controls="call" role="tab" data-toggle="tab">
-                        <img src="_/media/Images/Talk-To-Us/call830d.png?h=28&amp;la=en&amp;w=33&amp;hash=F129A6B0ACD54289F0B34B004F82FD59134DC886"
+                        <img src="/_/media/Images/Talk-To-Us/call830d.png?h=28&amp;la=en&amp;w=33&amp;hash=F129A6B0ACD54289F0B34B004F82FD59134DC886"
                              alt="" width="33" height="28"/>
                         <span>
                             Call US
@@ -459,7 +443,7 @@
                 </li>
                 <li role="presentation" class="">
                     <a href="#mail" aria-controls="mail" role="tab" data-toggle="tab">
-                        <img src="_/media/Images/Talk-To-Us/emailb5f0.png?h=28&amp;la=en&amp;w=33&amp;hash=98B3172180A7627BA8DE0EF1627AA356DF150BBD"
+                        <img src="/_/media/Images/Talk-To-Us/emailb5f0.png?h=28&amp;la=en&amp;w=33&amp;hash=98B3172180A7627BA8DE0EF1627AA356DF150BBD"
                              alt="" width="33" height="28"/>
                         <span>
                             Email US
@@ -468,7 +452,7 @@
                 </li>
                 <li role="presentation" class="">
                     <a href="#support" aria-controls="support" role="tab" data-toggle="tab">
-                        <img src="_/media/Images/Talk-To-Us/supportb655.png?h=28&amp;la=en&amp;w=33&amp;hash=1392DFCA9595F8FA7BA15C4E4136C68C443FE78B"
+                        <img src="/_/media/Images/Talk-To-Us/supportb655.png?h=28&amp;la=en&amp;w=33&amp;hash=1392DFCA9595F8FA7BA15C4E4136C68C443FE78B"
                              alt="" width="33" height="28"/>
                         <span>
                             Support
@@ -477,7 +461,7 @@
                 </li>
                 <li role="presentation" class="">
                     <a href="#trials" aria-controls="trials" role="tab" data-toggle="tab">
-                        <img src="_/media/Images/Talk-To-Us/trials22b1.png?h=28&amp;la=en&amp;w=33&amp;hash=49109AE5E665D6B0BDBBC0091977989D5D5740EC"
+                        <img src="/_/media/Images/Talk-To-Us/trials22b1.png?h=28&amp;la=en&amp;w=33&amp;hash=49109AE5E665D6B0BDBBC0091977989D5D5740EC"
                              alt="" width="33" height="28"/>
                         <span>
                             Trials
@@ -678,429 +662,10 @@
         </a>
     <?php endif; ?>
     </div>
-    <div id="partnersCarouselMobile" class="partnersCarouselMobile carousel slide visible-sm-block visible-xs-block"
-         data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
 
-            <div class="item active">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="left carousel-control " href="#partnersCarouselMobile" role="button" data-slide="prev"
-           style="display:none;">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control " href="#partnersCarouselMobile" role="button" data-slide="next"
-           style="display:none;">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
+    <?php $this->load->view($template);?>
 
 
-<div class="caseStudiesCarouselWrapper">
-    <div id="caseStudiesCarousel" class="caseStudies carousel slide" data-ride="carousel" data-interval="8000">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="_/media/Images/Homepage/CaseStudies/CnBYatch_V204e1.jpg?h=605&amp;la=en&amp;w=1330&amp;hash=A98398CEF203FB986BEEC524BBC2831A6CE76B99"
-                     class="first-slide hidden-xs" alt="" width="1330" height="605"/>
-                <div class="container">
-                    <div class="carousel-caption col-sm-5 col-md-5 col-xs-12 col-md-offset-1">
-                        <a href="case-studies/cnb-yachts.html">
-                            <p class="subhed">Case Studies</p>
-                            <h2>
-                                Designing the CNB 76
-                            </h2>
-                            <span>A Luxury Yacht for the 21st Century</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="_/media/Images/Homepage/CaseStudies/11-15/CaseStudy-KHS14268.jpg?h=605&amp;la=en&amp;w=1330&amp;hash=7A78599E5B79EFFE8FEC55BE39752EEEFE142C57"
-                     class="first-slide hidden-xs" alt="" width="1330" height="605"/>
-                <div class="container">
-                    <div class="carousel-caption col-sm-5 col-md-5 col-xs-12 col-md-offset-1">
-                        <a href="case-studies/khs.html">
-                            <p class="subhed">Case Studies</p>
-                            <h2>
-                                200-Year-Old Brewery Delivers Award-Winning Beer with KHS<br/>
-                                <br/>
-                            </h2>
-                            <span>KHS GmbH, based in Dortmund, Germany, offers filling machinery for glass and PET bottles, kegs, and cans for the beverage, food, and non-food industries.</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="longThinArrowCarouselNav">
-            <a class="left carousel-control" href="#caseStudiesCarousel" role="button" data-slide="prev">
-                <span class="icon icon-LongThinLeftArrow" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#caseStudiesCarousel" role="button" data-slide="next">
-                <span class="icon icon-LongThinRightArrow" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</div>
-
-<?php if(isset($pro_hot) && count($pro_hot) >= 4): ?>
-<div class="solutionsWrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="one-col-50-50-split col-sm-6 no-padding image"
-                 style="background-image:url('<?php echo $pro_hot[0]['pro_images'] ?>');background-position: right;">
-            </div>
-            <div class="col-lg-6 col-lg-offset-6 col-md-offset-6 col-sm-offset-6 col-sm-6 rightc copy">
-                <a href="http://liveworx.com/?utm_source=ptc.com&amp;utm_medium=banner&amp;utm_campaign=LiveWorx%20Boston%20FY16&amp;utm_content=LiveWorx_Boston_FY16-ptc.com-banner-homepage_panel-WW-2029&amp;cl1=LiveWorx_Boston_FY16-ptc.com-banner-homepage_panel-WW-2029&amp;cmsrc=ptc.com&amp;cid=701F0000000nUMbIAM&amp;elqCampaignId=1912"
-                   target="_blank">
-                    <h2><?php echo $pro_hot[1]['pro_name'] ?></h2>
-                    <p><?php echo $pro_hot[1]['pro_info']; ?></p>
-                    <br>
-                </a>
-                <a target="_blank" class="btn btn-lg med-blue btn-primary"
-                   href="http://liveworx.com/?utm_source=ptc.com&amp;utm_medium=banner&amp;utm_campaign=LiveWorx%20Boston%20FY16&amp;utm_content=LiveWorx_Boston_FY16-ptc.com-banner-homepage_panel-WW-2029&amp;cl1=LiveWorx_Boston_FY16-ptc.com-banner-homepage_panel-WW-2029&amp;cmsrc=ptc.com&amp;cid=701F0000000nUMbIAM&amp;elqCampaignId=1912">Xem thêm</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="solutionsWrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="one-col-50-50-split col-sm-6 col-sm-offset-6 no-padding image"
-                 style="background-image:url('<?php echo $pro_hot[3]['pro_images'] ?>');">
-            </div>
-            <div class="col-lg-6 col-lg-pull-6 col-md-pull-6 col-md-offset-1 col-sm-6 col-sm-pull-6 leftc copy">
-                <a href="product-lifecycle-report.html" target="">
-                    <h2><?php echo $pro_hot[2]['pro_name'] ?></h2>
-                    <p><?php echo $pro_hot[2]['pro_info'] ?></p>
-                </a>
-                <a class="btn btn-lg med-blue btn-primary" href="product-lifecycle-report.html" title="LEARN MORE">Xem thêm</a>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-
-<?php if(isset($listNews) && $listNews != null): ?>
-<div class="eventsModuleWrapper">
-    <div class="container-fluid eventsModuleTitle">
-        <div class="col-md-12">
-            <h3 align="center">Tin tức</h3>
-        </div>
-    </div>
-    <div class="container-fluid eventsModule">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-16 col-md-16 col-sm-16">
-                    <div class="grid-content">
-                        <?php foreach($listNews as $newsInfo): ?>
-                        <div class="col-lg-4 col-md-4 col-sm-12 event vcenter">
-                            <div class="eventImage">
-                                <a href="news/2016/ptc-named-technology-leader-in-the-global-iot-plm-market.html">
-                                    <img src="<?php echo $newsInfo['news_images'] ?>"
-                                         alt="Frost and Sullivan PLM IoT Award" width="407" height="232"/>
-                                </a>
-                            </div>
-                            <div class="eventDescription">
-                                <a target="Active Browser"
-                                   href="news/2016/ptc-named-technology-leader-in-the-global-iot-plm-market.html"
-                                   title="Read More">
-
-                                    <p class="date"><?php echo $newsInfo['news_date']; ?></p>
-                                    <h3><?php echo $newsInfo['news_title']; ?><br></h3>
-                                    <p><?php echo $newsInfo['news_info']; ?></p>
-                                    <p class="eventDescriptionBtn" align="center">
-                                    <a class="btn btn-lg med-blue btn-primary"
-                                                                      href="news/2016/ptc-named-technology-leader-in-the-global-iot-plm-market.html"
-                                                                      role="button">Read More</a></p>
-                                </a>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-
-<div class="miniPromosWrapper greenChevronCarouselNav">
-    <div class="container-fluid">
-        <div class="row equal-row" data-breakpoint="992">
-
-            <div class="col-md-8">
-                <div class="promoCarouselWrapper ">
-                    <div id="promoCarousel" class="promoCarousel carousel slide equal-col">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption">
-                                        <p>PTC (NASDAQ: PTC) is a global provider of technology platforms and solutions
-                                            that transform how
-                                            companies create, operate, and service the &ldquo;things&rdquo; in the
-                                            Internet of Things (IoT).</p>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption">
-                                        <p>PTC's field-proven software and solutions are deployed in more than 26,000
-                                            businesses worldwide to generate a product or service advantage.</p>
-                                        <br>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption">
-                                        <p>PTC has ~6,000 employees in 30 countries around the world.</p>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption">
-                                        <p>PTC has 750+ partners, including value-added-resellers, enterprise software
-                                            and performance team partners, hardware and system integration partners, and
-                                            service and training partners.</p>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="left carousel-control hidden-xs" href="#promoCarousel" role="button"
-                           data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control hidden-xs" href="#promoCarousel" role="button"
-                           data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <ol class="carousel-indicators hidden-lg hidden-md hidden-sm">
-                            <li data-target="#promoCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#promoCarousel" data-slide-to="1"></li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-2 no-padding-left">
-                <div class="promo1 equal-col">
-                    <div class="promo">
-                        <p><a>Designing in a Multi-CAD Environment</a></p>
-                        <br>
-                        <a role="button" href="cad/designing-in-a-multi-cad-environment.html"
-                           class="btn btn-lg trans btn-primary">Learn more <span aria-hidden="true"
-                                                                                 class="icon icon-CTA-arrow"></span></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-2 no-padding-left">
-                <div class="promo2 equal-col">
-                    <div class="promo">
-                        <p><a>The IoT is Revolutionizing SLM Software</a></p>
-                        <br>
-                        <a role="button" href="service-lifecycle-management/iot-takes-slm-to-the-next-level.html"
-                           class="btn btn-lg trans btn-primary">Learn more <span aria-hidden="true"
-                                                                                 class="icon icon-CTA-arrow"></span></a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
 <!-- ------------------------------------ -->
 
 <footer>
@@ -1180,10 +745,10 @@
 </footer>
 
 
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/jCookie.js" type="text/javascript"></script>
+<script src="/js/jquery.mobile.custom.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/jCookie.js" type="text/javascript"></script>
 <script type="text/javascript">
     /*********************************/
     /*CLM*/
@@ -1695,7 +1260,7 @@
     <!--Tracker script hidden to avoid spacing issues with the img it generates-->
     <script type="text/javascript" language="javascript">llactid = 19408</script>
     <script type="text/javascript" language="javascript"
-            src="../t2.trackalyzer.com/trackalyze.js"></script>
+            src="/js/trackalyze.js"></script>
 </div>
 <script>
     (function (h, o, t, j, a, r) {

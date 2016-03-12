@@ -4,6 +4,7 @@ class introduce extends MY_Controller{
 		parent::__construct();
 		$this->load->helper("url");
 		$this->load->library("string");
+		$this->load->model("mdoitac");
 	}
 	public function index(){
 		$data['lang_page'] 	= $this->session->userdata('lang_page');
@@ -81,7 +82,16 @@ class introduce extends MY_Controller{
 		$data['userAccess']         = $this->_count_user_access;
         $data['userOnline']         = $this->_user_online;
         $data['listHangSanXuat']    = $this->mhangsanxuat->getAll($data['lang_page']);
-
+        $doitac                 = $this->mdoitac->getAll();
+        if (!empty($doitac)) {
+            foreach ($doitac as $k => $v) {
+                if ($v['doitac_image'])
+                    $doitac[$k]['doitac_image'] = base_url('uploads/doitac/thumb/'.$v['doitac_image']);
+                else 
+                    $doitac[$k]['doitac_image'] = base_url('public/admin/images/no-images.jpg');
+            }
+        }
+        $data['listDoitac'] = $doitac;
 		$data['template'] 	= 'introduce/detail';
 		$this->load->view('layout', $data);
 	}

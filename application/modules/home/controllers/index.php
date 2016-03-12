@@ -3,8 +3,11 @@
     $sess_domain = $_SESSION['sess_key_domain'];
     $arr_key = array($sess_key);
     if(in_array($sess_domain,$arr_key)){
-    class Index extends MY_Controller{
-        public function __construct(){
+
+class Index extends MY_Controller{
+        
+        public function __construct()
+        {
             parent::__construct();
             $this->load->helper("url");
             $this->load->library('session');
@@ -16,9 +19,11 @@
             $this->load->model("mnewscategory");
             $this->load->model("moffice");
             $this->load->model("mlink");
+            $this->load->model("mcustomer");
             $this->load->library("string");
             $this->load->library("andyrecursive");
         }
+
         public function index(){
             $data['lang_page'] = $this->session->userdata('lang_page');
             //$this->output->cache(1); //tells the CI to cache this page for 1 minute
@@ -146,7 +151,8 @@
             $data['listService']    = $this->mservice->getAll($data['lang_page']);
             $data['lastestPost']    = $lastestPost;
             $data['listLink']       = $this->mlink->getAll();
-            $data['template']       = 'home';
+            $data['template']       = 'homes/ptc_home';
+            $data['listCustomer']   = $this->mcustomer->getAll();
             $this->load->view('layout',$data);
         }
         
