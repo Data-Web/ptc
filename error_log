@@ -1,0 +1,27 @@
+[09-Jan-2016 15:30:24] PHP Parse error:  syntax error, unexpected '[' in /home/tana1194/public_html/application/modules/home/controllers/cart.php on line 80
+[09-Jan-2016 08:43:32] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:32] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:32] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:32] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'fckeditor/fckeditor.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 15:43:33] PHP Fatal error:  Class 'FCKeditor' not found in /home/tana1194/public_html/application/modules/admin/views/product/add_product.php on line 75
+[09-Jan-2016 08:43:33] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:33] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:33] PHP Warning:  include(fckeditor/fckeditor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tana1194/public_html/index.php on line 6
+[09-Jan-2016 08:43:33] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'fckeditor/fckeditor.php' for inclusion (include_path='.:/opt/alt/php52/usr/share/pear:/opt/alt/php52/usr/share/php') in /home/tana1194/public_html/index.php on line 6
+[11-Jan-2016 18:18:06] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:08] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:13] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:14] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:16] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:16] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:17] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:26] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:26] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:26] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:28] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:28] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:29] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:29] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[11-Jan-2016 18:18:30] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/controllers/khachhang.php on line 49
+[13-Jan-2016 08:18:48] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/models/mindex.php on line 25
+[13-Jan-2016 08:18:49] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/tana1194/public_html/application/modules/admin/models/mindex.php on line 25
