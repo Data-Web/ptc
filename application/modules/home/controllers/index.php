@@ -16,6 +16,7 @@
             $this->load->model("mnewscategory");
             $this->load->model("moffice");
             $this->load->model("mlink");
+            $this->load->model("mcustomer");
             $this->load->library("string");
             $this->load->library("andyrecursive");
         }
@@ -147,6 +148,7 @@
             $data['lastestPost']    = $lastestPost;
             $data['listLink']       = $this->mlink->getAll();
             $data['template']       = 'home';
+            $data['listCustomer']       = $this->mcustomer->getAll();
             $this->load->view('layout',$data);
         }
         

@@ -1,0 +1,19 @@
+/* phần carouse khách hàng*/
+.caseStudiesCarouselWrapper .longThinArrowCarouselNav .carousel-control {
+    top: 33% !important;
+}
+
+/*#partnersCarouselMobile .carousel-control {
+    top: 9% !important;
+}*/
+.blogHeroMarqueeCarouselWrapper .dark .longThinArrowCarouselNav, .longThinArrowCarouselNav, 
+{
+	display: block !important;
+}
+@media screen and (max-width: 600px) {
+    .caseStudiesCarouselWrapper
+    {
+    	display: none !important;
+    }
+}
+/* ------------- END carouse khách hàng -----------------------*/

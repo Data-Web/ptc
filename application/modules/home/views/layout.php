@@ -64,6 +64,9 @@
     <![endif]-->
     <script src="js/jquery-2.1.4.min.js"></script>
 
+    <!-- ----------------- custom css by garung------------------------  -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>public/ptc/css/custom_css.css">
+    <!--------------------------------------------------------- -->
 
     <script src="js/jquery.bootpag.js"></script>
 
@@ -681,193 +684,40 @@
     <div id="partnersCarouselMobile" class="partnersCarouselMobile carousel slide visible-sm-block visible-xs-block"
          data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-
-            <div class="item active">
+            <?php 
+                if (!empty($listCustomer)):
+                    foreach ($listCustomer as $key => $kh):
+                        $image = explode('/', $kh['image']);
+            ?>
+            <div class="item <?php echo ($key == 0 ? 'active' : '') ?>">
                 <div class="container-fluid">
                     <div class="carousel-caption">
-                        <img src="#"/>
+                        <img src="<?php echo base_url().'uploads/posts/'.$image[4]; ?>" width="100%"/>
+                        <div class="container">
+                            <div class="carousel-caption col-sm-5 col-md-5 col-xs-12 col-md-offset-1">
+                                <a href="case-studies/cnb-yachts.html">
+                                    <p class="subhed"><?php echo $kh['title']; ?></p>
+                                    <?php echo $kh['desc']; ?>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="container-fluid">
-                    <div class="carousel-caption">
-                        <img src="#"/>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; endif; ?>
         </div>
-        <a class="left carousel-control " href="#partnersCarouselMobile" role="button" data-slide="prev"
-           style="display:none;">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control " href="#partnersCarouselMobile" role="button" data-slide="next"
-           style="display:none;">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="longThinArrowCarouselNav">
+            <a class="left carousel-control " href="#partnersCarouselMobile" role="button" data-slide="prev"
+               style="display:none;">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control " href="#partnersCarouselMobile" role="button" data-slide="next"
+               style="display:none;">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -875,49 +725,36 @@
 <div class="caseStudiesCarouselWrapper">
     <div id="caseStudiesCarousel" class="caseStudies carousel slide" data-ride="carousel" data-interval="8000">
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="_/media/Images/Homepage/CaseStudies/CnBYatch_V204e1.jpg?h=605&amp;la=en&amp;w=1330&amp;hash=A98398CEF203FB986BEEC524BBC2831A6CE76B99"
-                     class="first-slide hidden-xs" alt="" width="1330" height="605"/>
+        <?php 
+            if (!empty($listCustomer)):
+                foreach ($listCustomer as $key => $kh):
+                    $image = explode('/', $kh['image']);
+        ?>
+            <div class="item <?php echo ($key == 0 ? 'active' : '') ?>">
+                <img src="<?php echo base_url().'uploads/posts/'.$image[4]; ?>"
+                     class="first-slide hidden-xs" alt="" width="100%" height="605"/>
                 <div class="container">
                     <div class="carousel-caption col-sm-5 col-md-5 col-xs-12 col-md-offset-1">
                         <a href="case-studies/cnb-yachts.html">
-                            <p class="subhed">Case Studies</p>
-                            <h2>
-                                Designing the CNB 76
-                            </h2>
-                            <span>A Luxury Yacht for the 21st Century</span>
+                            <p class="subhed"><?php echo $kh['title']; ?></p>
+                            <?php echo $kh['desc']; ?>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="_/media/Images/Homepage/CaseStudies/11-15/CaseStudy-KHS14268.jpg?h=605&amp;la=en&amp;w=1330&amp;hash=7A78599E5B79EFFE8FEC55BE39752EEEFE142C57"
-                     class="first-slide hidden-xs" alt="" width="1330" height="605"/>
-                <div class="container">
-                    <div class="carousel-caption col-sm-5 col-md-5 col-xs-12 col-md-offset-1">
-                        <a href="case-studies/khs.html">
-                            <p class="subhed">Case Studies</p>
-                            <h2>
-                                200-Year-Old Brewery Delivers Award-Winning Beer with KHS<br/>
-                                <br/>
-                            </h2>
-                            <span>KHS GmbH, based in Dortmund, Germany, offers filling machinery for glass and PET bottles, kegs, and cans for the beverage, food, and non-food industries.</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="longThinArrowCarouselNav">
-            <a class="left carousel-control" href="#caseStudiesCarousel" role="button" data-slide="prev">
-                <span class="icon icon-LongThinLeftArrow" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#caseStudiesCarousel" role="button" data-slide="next">
-                <span class="icon icon-LongThinRightArrow" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        <?php endforeach; endif; ?>
         </div>
     </div>
+    <div class="longThinArrowCarouselNav">
+        <a class="left carousel-control" href="#caseStudiesCarousel" role="button" data-slide="prev">
+            <span class="icon icon-LongThinLeftArrow" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#caseStudiesCarousel" role="button" data-slide="next">
+            <span class="icon icon-LongThinRightArrow" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>    
 </div>
 
 <?php if(isset($pro_hot) && count($pro_hot) >= 4): ?>
